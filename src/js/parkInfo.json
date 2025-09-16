@@ -48585,7 +48585,7 @@
     "PRIMARY_DESIGNATION": "National Battlefield",
     "STATE_CODE_LIST": "MO",
     "BANNER_ALT_TEXT": "\"Don\\'t Yield An Inch\" by Andy Thomas"
-  }, {
+}, {
     "STATE_NAME": "South Dakota",
     "PARK_CODE": "wica",
     "TOPICS": [{
@@ -48754,7 +48754,7 @@
     "PRIMARY_DESIGNATION": "National Park",
     "STATE_CODE_LIST": "SD",
     "BANNER_ALT_TEXT": "boxwork cave formation"
-  }, {
+}, {
     "STATE_NAME": "Washington",
     "PARK_CODE": "wing",
     "TOPICS": [{
@@ -48791,7 +48791,7 @@
     "PRIMARY_DESIGNATION": "Affiliated Area",
     "STATE_CODE_LIST": "WA",
     "BANNER_ALT_TEXT": "Nippon Kan Theatre curtain, painted with logos and ads for local Japanese-American businesses"
-  }, {
+}, {
     "STATE_NAME": "Virginia",
     "PARK_CODE": "wotr",
     "TOPICS": [{
@@ -48834,7 +48834,7 @@
     "PRIMARY_DESIGNATION": "",
     "STATE_CODE_LIST": "VA",
     "BANNER_ALT_TEXT": "A historic white house with the National Park Service arrowhead in front of a wooden amphitheater."
-  }, {
+}, {
     "STATE_NAME": "New York",
     "PARK_CODE": "wori",
     "TOPICS": [{
@@ -48883,7 +48883,7 @@
     "PRIMARY_DESIGNATION": "National Historical Park",
     "STATE_CODE_LIST": "NY",
     "BANNER_ALT_TEXT": "The eastern wall of the Wesleyan Chapel in morning light with mist and autumn trees"
-  }, {
+}, {
     "STATE_NAME": "District of Columbia",
     "PARK_CODE": "wwim",
     "TOPICS": [{
@@ -48938,7 +48938,7 @@
     "PRIMARY_DESIGNATION": "",
     "STATE_CODE_LIST": "DC",
     "BANNER_ALT_TEXT": "World War I Memorial in fall"
-  }, {
+}, {
     "STATE_NAME": "District of Columbia",
     "PARK_CODE": "wwii",
     "TOPICS": [{
@@ -48975,7 +48975,7 @@
     "PRIMARY_DESIGNATION": "",
     "STATE_CODE_LIST": "DC",
     "BANNER_ALT_TEXT": "World War II Memorial After Dark"
-  }, {
+}, {
     "STATE_NAME": "Alaska",
     "PARK_CODE": "wrst",
     "TOPICS": [{
@@ -49219,7 +49219,7 @@
     "PRIMARY_DESIGNATION": "National Park & Preserve",
     "STATE_CODE_LIST": "AK",
     "BANNER_ALT_TEXT": "Aerial view of Icy Bay (coastline), with Guyot Glacier and Mt. St. Elias."
-  }, {
+}, {
     "STATE_NAME": "North Carolina",
     "PARK_CODE": "wrbr",
     "TOPICS": [{
@@ -49262,7 +49262,7 @@
     "PRIMARY_DESIGNATION": "National Memorial",
     "STATE_CODE_LIST": "NC",
     "BANNER_ALT_TEXT": "Orville Wright taking flight for the first time, with Wilbur Wright watching to the right"
-  }, {
+}, {
     "STATE_NAME": "Arizona",
     "PARK_CODE": "wupa",
     "TOPICS": [{
@@ -49350,7 +49350,7 @@
     "PRIMARY_DESIGNATION": "National Monument",
     "STATE_CODE_LIST": "AZ",
     "BANNER_ALT_TEXT": "A red sandstone pueblo with a high wall set against a blue sky with clouds"
-  }, {
+}, {
     "STATE_NAME": "ID, MT, WY",
     "PARK_CODE": "yell",
     "TOPICS": [{
@@ -49705,7 +49705,7 @@
     "PRIMARY_DESIGNATION": "National Park",
     "STATE_CODE_LIST": "ID,MT,WY",
     "BANNER_ALT_TEXT": "An overhead view of Grand Prismatic Spring, a hydrothermal spring with vibrant blues, greens, yellow"
-  }, {
+}, {
     "STATE_NAME": "Virginia",
     "PARK_CODE": "york",
     "TOPICS": [{
@@ -49862,7 +49862,7 @@
     "PRIMARY_DESIGNATION": "Part of Colonial National Historical Park",
     "STATE_CODE_LIST": "VA",
     "BANNER_ALT_TEXT": "Black 12 Pounder revolutionary war cannon among trees"
-  }, {
+}, {
     "STATE_NAME": "California",
     "PARK_CODE": "yose",
     "TOPICS": [{
@@ -50100,7 +50100,7 @@
     "PRIMARY_DESIGNATION": "National Park",
     "STATE_CODE_LIST": "CA",
     "BANNER_ALT_TEXT": "Soaring granite cliffs with a waterfall cascading down to the valley floor with two rainbows."
-  }, {
+}, {
     "STATE_NAME": "Colorado",
     "PARK_CODE": "yuho",
     "TOPICS": [{
@@ -50125,7 +50125,7 @@
     "PRIMARY_DESIGNATION": "National Monument",
     "STATE_CODE_LIST": "CO",
     "BANNER_ALT_TEXT": "View of ancient pueblo wall at Yucca House."
-  }, {
+}, {
     "STATE_NAME": "Alaska",
     "PARK_CODE": "yuch",
     "TOPICS": [{
@@ -50273,7 +50273,7 @@
     "PRIMARY_DESIGNATION": "National Preserve",
     "STATE_CODE_LIST": "AK",
     "BANNER_ALT_TEXT": "Aerial view of the Yukon River in summer"
-  }, {
+}, {
     "STATE_NAME": "Utah",
     "PARK_CODE": "zion",
     "TOPICS": [{
@@ -50436,5 +50436,4 @@
     "PRIMARY_DESIGNATION": "National Park",
     "STATE_CODE_LIST": "UT",
     "BANNER_ALT_TEXT": "Photo of a cloudy blue sky over a triangular sandstone mountain. Green and yellow foliage below."
-  }]
-  
+}]
