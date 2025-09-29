@@ -231,3 +231,4 @@ export async function getParkData() {
   const parkData = await getJson("parks?parkCode=yell");
   return parkData.data[0];
 }
+//test .env file usage

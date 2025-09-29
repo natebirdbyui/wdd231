@@ -26,3 +26,4 @@ async function init() {
 }
 
 init();
+//test .env file usage
