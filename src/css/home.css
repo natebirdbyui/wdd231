@@ -1,0 +1,47 @@
+.intro {
+    padding: 1em;
+}
+
+.intro h1 {
+    font-family: var(--bs-font-serif);
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.info > * {
+    flex: 1;
+}
+
+@media screen and (min-width: 600px) {
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.disclaimer {
+    padding: 0 1em;
+}

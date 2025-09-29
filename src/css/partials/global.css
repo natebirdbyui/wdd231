@@ -1,0 +1,26 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+    font-size: 18px;
+    margin: 0;
+}
+
+a:link,
+a:visited {
+    color: var(--bs-link-color);
+}
+
+a:hover {
+    color: var(--bs-link-hover-color);
+}
+
