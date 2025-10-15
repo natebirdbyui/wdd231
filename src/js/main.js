@@ -1,20 +1,21 @@
-import { getParkData, getInfoLinks} from "./parkService.mjs";
+import "../css/style.css"; // we can do this because we are using Vite...
+import "../css/home.css";
+import { getParkData, getInfoLinks } from "./parkService.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
 import { mediaCardTemplate } from "./templates.mjs";
-const parkData = getParkData();
 
 function setParkIntro(data) {
-    const introEl = document.querySelector(".intro");
-    introEl.innerHTML = `<h1>${data.fullName}</h1>
-    <p>${data.description}</p>`;
+  const introEl = document.querySelector(".intro");
+  introEl.innerHTML = `<h1>${data.fullName}</h1>
+  <p>${data.description}</p>`;
 }
 
 function setParkInfoLinks(data) {
-    const infoEl = document.querySelector(".info");
+  const infoEl = document.querySelector(".info");
   // we have multiple links to build...so we map to transform the array of objects into an array of HTML strings.
-    const html = data.map(mediaCardTemplate);
+  const html = data.map(mediaCardTemplate);
   // join the array of strings into one string and insert it into the section
-    infoEl.insertAdjacentHTML("afterbegin", html.join(""));
+  infoEl.insertAdjacentHTML("afterbegin", html.join(""));
 }
 
 async function init() {
@@ -26,4 +27,3 @@ async function init() {
 }
 
 init();
-//test .env file usage
