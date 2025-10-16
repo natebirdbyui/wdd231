@@ -200,6 +200,7 @@ const parkInfoLinks = [
   }
 ];
 
+
 const baseUrl = "https://developer.nps.gov/api/v1/";
 const apiKey = import.meta.env.VITE_NPS_API_KEY;
 
@@ -226,18 +227,40 @@ export function getInfoLinks(data) {
   });
   return withUpdatedImages;
 }
+//update parkData to pull from the API instead of the hard-coded object--can run multiple parks and pages :)
+export async function getParkData(parkCode = "yell") {
+  const apiKey = import.meta.env.VITE_NPS_API_KEY;//pulls API key from .env file
+  const url = `https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=${apiKey}`;
 
-export async function getParkData() {
-  const parkData = await getJson("parks?parkCode=yell ");
-  return parkData.data[0];
+  try{
+    const response = await fetch(url);
+    const data = await response.json();
+    return data.data[0];//return the first park object from the data array
+  } catch (error) {
+    console.error("Error fetching park data:", error);
+    return park;//return the hard-coded park object if there is an error
+  }
 }
 
-export async function getParkAlerts(code) {
-  const parkData = await getJson(`alerts?parkCode=${code}`);
-  return parkData.data;
+export async function getParkAlerts(parkCode) {
+  const url = `alerts?parkCode=${parkCode}`;
+  const options = {
+    method: "GET",
+    headers: { "X-Api-Key": apiKey }
+  };
+
+  try {
+    const response = await fetch(baseUrl + url, options);
+    const data = await response.json();
+    return data.data || [];
+  } catch (error) {
+    console.error("Error fetching park alerts:", error);
+    return [];
+  }
 }
 
-export async function getParkVisitorCenters(code) {
-  const parkData = await getJson(`visitorcenters?parkCode=${code}`);
+
+export async function getParkVisitorCenters(parkCode) {
+  const parkData = await getJson(`visitorcenters?parkCode=${parkCode}`);
   return parkData.data;
 }

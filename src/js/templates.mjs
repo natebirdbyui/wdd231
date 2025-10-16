@@ -10,12 +10,12 @@ export function parkInfoTemplate(info) {
 
 export function mediaCardTemplate(info) {
   return `<div class="media-card">
-    <a href="${info.link}">
-    <img src="${info.image}" alt="${info.name}" class="media-card__img">
-    <h3 class="media-card__title">${info.name}</h3>
-    </a>
-   <p>${info.description}</p>
-     </div>`;
+      <a href="${info.link}">
+      <img src="${info.image}" alt="${info.name}" class="media-card__img">
+      <h3 class="media-card__title">${info.name}</h3>
+      </a>
+      <p>${info.description}</p>
+    </div>`;
 }
 function getMailingAddress(addresses) {
   const mailing = addresses.find((address) => address.type === "Mailing");
@@ -40,6 +40,7 @@ export function footerTemplate(info) {
     `;
 }
 
+//week 5 additions
 export function alertTemplate(alert) {
   let alertType = "";
   // most of the alerts are one word and line up with the icons nicely. "Park Closure" is the exception
