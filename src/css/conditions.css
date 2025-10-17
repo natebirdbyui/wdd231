@@ -36,11 +36,23 @@ main {
 }
 
 /* visitor styles */
-
-.visitor > details > ul {
-    list-style: none;
-    padding: 0;
-}
-.visitor > details li {
+.visitor details,
+.activities details {
     border-bottom: 1px solid var(--bs-grey-3);
+    border-bottom-width: 90%;
+    border: 1px solid var(--bs-grey-3);
+    padding: 0.5rem;
+    list-style: none;
 }
+
+/*activities styles*/
+.activities ul {
+    list-style: disc;
+    padding: 0.5rem;
+    margin-left: 20px;
+}
+
+.activities #current-details {
+    border: 1px solid var(--bs-grey-3);
+}
+
