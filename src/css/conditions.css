@@ -36,11 +36,8 @@ main {
 }
 
 /* visitor styles */
-.visitor details,
-.activities details {
+.visitor details ul li {
     border-bottom: 1px solid var(--bs-grey-3);
-    border-bottom-width: 90%;
-    border: 1px solid var(--bs-grey-3);
     padding: 0.5rem;
     list-style: none;
 }
@@ -56,3 +53,11 @@ main {
     border: 1px solid var(--bs-grey-3);
 }
 
+/*activity and visitor border */
+.visitor details,
+.activities details {
+    border-bottom: 1px solid var(--bs-grey-3);
+    border: 1px solid var(--bs-grey-3);
+    padding: 0.5rem;
+    list-style: none;
+}
