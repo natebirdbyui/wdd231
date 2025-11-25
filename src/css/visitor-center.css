@@ -1,0 +1,150 @@
+/* visitor-center.css */
+
+/* Visitor Center Title */
+.vc-name {
+  border-bottom: 1px solid var(--bs-gray-400);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.vc-name svg {
+  width: 1em;
+  height: 1em;
+}
+
+/* Visitor Center Info Section */
+.vc-info figure {
+  margin: 1em 3em;
+}
+
+.vc-info figcaption {
+  font-size: 0.8em;
+}
+
+.vc-info figcaption > span {
+  display: block;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+/* Details list icons */
+.vc-details-list svg,
+.vc-gallery svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+}
+
+/* Details summary styling */
+.vc-details-list summary {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  gap: 0.5rem;
+  position: relative;
+}
+
+/* Hide default marker */
+.vc-details-list summary::marker,
+.vc-details-list summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Custom arrow */
+.vc-details-list summary::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("../images/arrow.svg");
+  background-size: 1.25rem 1.25rem;
+  background-repeat: no-repeat;
+}
+
+/* Details borders */
+.vc-details-list details {
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Amenities list */
+#vcAmenities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#vcAmenities li {
+  margin-bottom: 1em;
+}
+
+/* Gallery container */
+.vc-main,
+.vc-gallery {
+  width: 100%;
+  max-width: 1200px; /* optional max width for large screens */
+  margin: 0 auto; /* center the gallery */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Gallery heading */
+.vc-gallery > h2 {
+  display: flex;          /* place icon and text inline */
+  align-items: center;    /* vertical center */
+  gap: 0.5rem;            /* space between icon and text */
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.vc-gallery > h2 svg.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  fill: currentColor; /* ensures it inherits text color */
+}
+
+
+
+/* Gallery grid */
+.vc-gallery ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row desktop */
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vc-gallery li {
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 4 / 3; /* keeps rectangles proportional */
+}
+
+.vc-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Tablet: 2 per row */
+@media (max-width: 900px) {
+  .vc-gallery ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 600px) {
+  .vc-gallery ul {
+    grid-template-columns: 1fr;
+  }
+}
